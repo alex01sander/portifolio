@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+body{
+    background-color: #161616;
+    font-family: 'Inter', sans-serif;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.inicio h1{
+    color: white;
+    margin-top: 100px;
+    font-family: 'Inter', sans-serif;
+}
+
+#myName{
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #04ec5d;
+}
+
+.p_inicio{
+    color: white;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.redes_1 {
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.redes{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icons_social{
+    width: 25px;
+    
+}
+
+/* SOBRE */
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* .sobre_container{
+    
+    margin-top: 100px;
+} */
+
+
+.img-float{
+    animation: float 6s ease-in-out infinite;
+}
+
+.sobre h2{
+    color: aliceblue;
+    margin-top: 100px;
+    font-family: 'Inter', sans-serif;
+}
+
+.flex_container{
+    display: flex;
+}
+.sobre_p {
+    color: white;
+    max-width:500px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    
+}
+.img_sobre{
+    width: 400px;
+    
+    border-radius: 50px;
+    
+
+}
+
+
+/* SOBRE */
+
+/* SKILLS */
+h3{
+    color: aliceblue;
+    display:flex;
+    justify-content: center;
+    align-items: center ;
+    /* margin-top: 100px; */
+    
+}
+
+.cards_skill{
+    background-color: rgb(48, 47, 47);
+    /* border: 1px solid white; */
+    border-radius: 100px;
+}
+
+
+.border_skill{
+    /* border: 1px solid wheat; */
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    height: auto;
+    width: 50rem;
+    padding: 30px
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+
+
+.img_skil{
+    width: 130px;
+    padding: 10px;
+}
+/* SKILLS */
+
+/* PROJETOS */
+
+.h4_projetos{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.h4_projetosTitulo{
+    color: aqua;
+}
+
+.projetos{
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+    padding: 100px;
+}
+
+
+
+.projeto01{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 10px;
+}
+
+.projeto02{
+    max-width: 300px;
+    margin: 25px 0;
+    color: aliceblue;
+}
+
+.cards{
+    background-color: rgb(48, 47, 47);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cards_1{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 300px;
+  
+}
+
+
+
+/* PROJETOS */
+
+
+
+
+
+@keyframes float{
+	0%,100%{
+		/* box-shadow:0 5px 15px 0 rgba(0,0,0,.6); */
+		transform:translatey(0)
+	}
+	50%{
+		box-shadow:0 1px 1px 0 rgba(80, 79, 79, 0.2);
+		transform:translatey(-20px)
+	}
+}
+
+div a:hover{
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+
+#myName::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: myName .7s infinite;
+  }
+
+  @keyframes myName {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+
+
+
+ 

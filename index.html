@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>PortDev</title>
+</head>
+<body>
+    <div class="inicio">
+        <div>
+            <h1>Olá Seja Bem Vindo, eu sou</h1>
+            <p class="p_inicio" id="myName">Alex Britto </p>
+            <p class="p_inicio">Desenvolvedor FrontEnd</p>
+
+            <div class="redes">
+                <a class="redes_1" href="https://www.linkedin.com/in/alex-sander-dev/"><img src="./image/icons8-linkedin-2-48.png" class="icons_social" alt="">
+                    Linkedin</a>
+                <a class="redes_1" href="https://github.com/alex01sander">
+                    <img src="./image/icons8-github-64.png" class="icons_social" alt="github"> GitHub</a>
+                
+                
+            </div>
+        </div>
+        
+        <div>
+            <img class="img-float" src="./image/programador-removebg-preview.png" alt="perfil">
+        </div>
+        
+        
+        
+    </div>
+
+    <section>
+        <div class="sobre">
+            
+            <div class="sobre_container" >
+                <h2>Sobre</h2>
+                <div class="flex_container">
+                    
+                    <p class="sobre_p"> Eu tive meu primeiro computador aos 15 anos, sempre tive curiosidade em saber como funcionasse os sites que eu usava e jogos que eu jogava na época.<br>
+
+                        Meu primeiro contato com programação, foi fazer themes para tumblr em html e css, fiz minha primera requisição http sem ao menos saber o que era, com um servidor local no computador para fazer uma radio online para interagir no jogo habbo que jogava na época, sempre sonhava em fazer jogos. Em 2016 ingressei na faculdade em Ciências da computação, mas a didatica não entregava o que eu estava buscando, passei para Análise e Desenvolvimento, mas também não obtive o mesmo êxtio.
+                        
+                         <br>Atualmente, tenho como foco principal da minha carreira na área de desenvolvimento web. Utilizo a stack JavaScript (React) para desenvolver.
+                        </p>
+                    <img class="img_sobre" src="./image/programdor.jpg" alt="programador">                  
+                   
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </section>
+    <section class="border_skill">
+        <h3>Stacks</h3>
+        <div class="skill">
+            <div class="cards_skill">
+                <img src="./image/git.png" alt="" class="img_skil">
+            </div>
+            <div class="cards_skill">
+                <img src="./image/icons8-reagir-400.png" alt="" class="img_skil">
+            </div>
+            <div class="cards_skill">
+                <img src="./image/icons8-javascript-480.png" alt="" class="img_skil">
+            </div>
+            <div class="cards_skill">
+                <img src="./image/icons8-html-5-480.png" alt="" class="img_skil">
+            </div>
+            <div class="cards_skill">
+                <img src="./image/icons8-css3-240.png" alt="" class="img_skil">
+            </div>
+            <div class="cards_skill">
+                <img src="./image/icons8-sass-480.png" alt="" class="img_skil">
+            </div>
+           
+        </div>
+    </section>
+    <section>
+        <h4 class="h4_projetos">Projetos</h4>
+        <div class="projetos">
+            <div class="cards">
+                <img src="./image/image 4.png" alt="projetos" class="projeto01">
+                <h4 class="h4_projetosTitulo">Teste</h4>
+                <p class="projeto02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iure sapiente</p>
+                <div class="cards">
+                    <a class="cards_1" href="#">View Live</a>
+                    <a class="cards_1" href="#">GitHub</a>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="./image/image 5.png" alt="projetos" class="projeto01">
+                <h4 class="h4_projetosTitulo">Teste</h4>
+                <p class="projeto02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iure sapiente</p>
+                <div class="cards">
+                    <a class="cards_1" href="#">View Live</a>
+                    <a class="cards_1" href="#">GitHub</a>
+                </div>
+            </div>
+            <!-- <div class="cards">
+                <img src="./image/projeto.png" alt="projetos" class="projeto01">
+                <h4 class="h4_projetosTitulo">Teste</h4>
+                <p class="projeto02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iure sapiente</p>
+                <div class="cards">
+                    <a class="cards_1" href="#">View Live</a>
+                    <a class="cards_1" href="#">GitHub</a>
+                </div>
+            </div> -->
+        </div>
+
+       
+
+    </section>
+
+    
+   
+
+
+
+    <script>
+        function typeWriter(elemento) {
+          const textoArray = elemento.innerHTML.split('');
+          elemento.innerHTML = '';
+          textoArray.forEach((letra, i) => {
+            setTimeout(() => elemento.innerHTML += letra, 450 * i);
+          });
+        }
+      
+      
+        const titulo = document.getElementById('myName');
+        typeWriter(titulo);
+      </script>
+</body>
+</html>
