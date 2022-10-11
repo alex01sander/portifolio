@@ -73,7 +73,9 @@ body{
 
 
 .img-float{
-    animation: float 6s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
+    width: 400px;
+    margin-left: 100px;
 }
 
 .sobre h2{
@@ -116,6 +118,8 @@ h3{
 .cards_skill{
     background-color: rgb(48, 47, 47);
     /* border: 1px solid white; */
+    animation: kicar 5s;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
     border-radius: 100px;
 }
 
@@ -141,6 +145,8 @@ h3{
 .img_skil{
     width: 130px;
     padding: 10px;
+    
+    
 }
 /* SKILLS */
 
@@ -152,7 +158,8 @@ h3{
     margin-top: 100px;
 }
 .h4_projetosTitulo{
-    color: aqua;
+    color: white;
+    text-align: center;
 }
 
 .projetos{
@@ -210,7 +217,7 @@ h3{
 		transform:translatey(0)
 	}
 	50%{
-		box-shadow:0 1px 1px 0 rgba(80, 79, 79, 0.2);
+		/* box-shadow:0 1px 1px 0 rgba(80, 79, 79, 0.2); */
 		transform:translatey(-20px)
 	}
 }
@@ -219,6 +226,7 @@ div a:hover{
     background-color: rgb(87, 87, 87);
     color: white;
 }
+
 
 #myName::after {
     content: '|';
@@ -238,7 +246,15 @@ div a:hover{
   }
 
 
-
+  @keyframes kicar {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
 
 
  
