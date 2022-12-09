@@ -75,12 +75,12 @@ body{
     margin-left: 100px;
 }
 
-.sobre h2{
+.sobre {
     color: aliceblue;
     margin-top: 100px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    padding: 50px;
+    
 }
 
 .flex_container{
