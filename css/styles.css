@@ -16,6 +16,8 @@ body{
     margin-top: 50px;
 }
 
+ 
+
 
 .inicio h1{
     color: white;
@@ -59,19 +61,13 @@ body{
 
 /* SOBRE */
 
-.sobre {
+/* .sobre {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
     
-}
-
-/* .sobre_container{
-    
-    margin-top: 100px;
 } */
-
 
 .img-float{
     animation: float 4s ease-in-out infinite;
@@ -83,12 +79,15 @@ body{
     color: aliceblue;
     margin-top: 100px;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 50px;
 }
 
 .flex_container{
-    display: grid;
-  column-gap: 50px;
-  grid-template-columns: auto auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  
   padding: 10px;
 }
 .sobre_p {
@@ -110,14 +109,13 @@ body{
 /* SKILLS */
 h3{
     color: aliceblue;
-    display:flex;
-    justify-content: center;
-    align-items: center ;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     
 }
 
+    
 .cards_skill{
     background-color: rgb(48, 47, 47);
     border-radius: 100px;
@@ -144,7 +142,6 @@ h3{
 .skill{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    
     justify-content: center;
     gap: 50px;
     margin-top: 50px;
@@ -271,4 +268,59 @@ div a:hover{
 }
 
 
- 
+@media (max-width: 768px){
+    .inicio{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align:center;
+    gap: 100px;
+    }
+    
+    .inicio h1{
+        font-size: 30px;
+        margin: auto;
+        
+    }
+
+    .redes{
+        justify-content: center;
+    }
+
+    .flex_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_sobre{
+        margin: auto;
+    }
+    
+    h3{
+        margin: auto;
+    }
+    
+    .skill{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        /* margin-right: 300px; */
+    }
+
+    .border_skill{
+        padding: 0;
+        margin-top: 150px;
+        width: 0rem;
+    }
+
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .img-float{
+    margin: auto;
+   }
+} 
